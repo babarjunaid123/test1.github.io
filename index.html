@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>New Template with Bootstrap</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+    });
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function(){
+           window.location.hash = hash;
+         });
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="div1" id="about">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+          <a class="navbar-brand heyu" href="#"><img src="images/logo.png"></a>
+        </div>
+         <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#"></a></li>
+          </li>
+          <li><a href="#"></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right list1">
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#support">SUPPORT</a></li>
+          <li><a href="#blog">BLOG</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    <div class=" col-sm-7 heading1">
+      <h1 class="heading1-size">Simple, Safe</h1>
+      <h1 class="heading1-size">& Beautiful</h1>
+      <p class="text1">With <b>HeyU</b> you'll get fast, simpe, secure Messaging!</p>
+      <button type="button" class="btn btn-default button-style" style="">Download Now</button>
+    </div>
+    <div class="col-sm-5">
+      <img src="images/img-1.png" class="img-main" width="290" height="650">
+    </div>
+  </div>
+  <div class="div2" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-7">
+          <div class="sub-div2">
+            <img src="images/img-7.png" class="img1 img-responsive">
+            <img src="images/img-2.png" class="img2 img-responsive">
+          </div>
+        </div>
+        <div class=" col-sm-5">
+          <div class="sub-div2">
+            <div class="text2">
+              <h1 class="heading2-size">Easy Messaging<span class="dot"></span></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div3">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="sub-div3">
+            <div class="text3">
+              <h1 class="heading2-size">Keep in Touch<span class="dot"></span></h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-7">
+          <div class="sub-div3">
+            <img src="images/img-3.png" class="img3 img-responsive">
+            <img src="images/img-4.png" class="img4 img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div4" id="faq">
+    <div class="container">
+      <div class="row">
+        <h1 class="heading2-size text-center" style="padding-bottom: 80px;">What People SAY<span class="dot"></span></h1>
+        <div class="col-sm-4 xyz">
+          <img src="images/img-5.png" style="float: left;" data-toggle="popover" data-placement="top" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" title="Booking.com">
+          <p style="padding: 10px 0px 0px 70px;">John Doe<br>CEO</p>
+        </div>
+        <div class="col-sm-4 xyz">
+          <img src="images/img-8.png" style="float: left;" data-toggle="popover" data-placement="top" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" title="Airbnb">
+          <p style="padding: 10px 0px 0px 70px;">John Doe<br>CEO</p>
+        </div>
+        <div class="col-sm-4 xyz">
+          <img src="images/img-5.png" style="float: left;" data-toggle="popover" data-placement="top" data-content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s" title="Symu.co">
+          <p style="padding: 10px 0px 0px 70px;">John Doe<br>CEO</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="video">
+            <div class="row">
+              <div class="col-md-10 col-xs-8">
+                <div class="conv">
+                  <h3 style="color: white;">Start a Conversation</h3>
+                  <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-4">
+                <div class="icon">
+                  <span class="glyphicon glyphicon-comment"></span>
+                </div>
+              </div>
+              <div class="col-md-10 col-xs-8">
+                <div class="conv">
+                  <h3 style="color: white;">Make a FREE Call</h3>
+                  <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-4">
+                <div class="icon">
+                  <span class="glyphicon glyphicon-earphone"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="video-img">
+            <img src="images/img-6.png" class="img-responsive"> 
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="video">
+            <div class="row">
+              <div class="col-md-2 col-xs-4" style="padding-left: 10px;">
+                <div class="icon">
+                  <span class="glyphicon glyphicon-camera"></span>
+                </div>
+              </div>
+              <div class="col-md-10 col-xs-8">
+                <div class="conv">
+                  <h3 style="color: white;">Start a Conversation</h3>
+                  <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+              <div class="col-md-2 col-xs-3">
+                <div class="icon">
+                  <span class="glyphicon glyphicon-facetime-video"></span>
+                </div>
+              </div>
+              <div class="col-md-10 col-xs-9">
+                <div class="conv">
+                  <h3 style="color: white;">Make a FREE Call</h3>
+                  <p style="color: white;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="div6" id="support">
+    <div class="container">
+      <div class="row">
+        <h1 class="heading2-size text-center">Subscribe to your Newsletter<span class="dot"></span></h1>
+        <p class="text4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt consectetur adipisicing elit</p>
+        <div class="col-sm-7 col-xs-6 sub1-div6">
+          <p>Your EMAIL Adress</p>
+        </div>
+        <div class="col-sm-5 col-xs-6 sub2-div6">
+          <button type="button" class="btn btn-danger button-style2">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="div7">
+      <div class="container">
+        <div class="row">
+          <div class="logo text-center">
+            <img src="images/logo-2.png">
+            <h1 class="heading2-size text-center">Download the App<span class="dot"></span></h1>
+            <p class="text5" ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+            <img src="images/logo-1.png" style="padding-top: 30px;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="div8">
+      <div class="container">
+        <div class="row">
+         <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+            </div>
+            <ul class="nav navbar-nav list-footer">
+              <li class=""><a href="#about">HOME</a></li>
+              <li class=""><a href="#about">ABOUT</a></li>
+              <li class=""><a href="#faq">FAQ</a></li>
+              <li class=""><a href="#support">SUPPORT</a></li>
+              <li class=""><a href="#blog">BLOG</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">English <span class="glyphicon glyphicon-menu-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#urdu">Urdu</a></li>
+                  <li><a href="#punjabi">Punjabi</a></li>
+                  <li><a href="#pashto">Pashto</a></li>
+                  <li><a href="#saraiki">Saraiki</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    </div>
+  </body>
+  </html>
